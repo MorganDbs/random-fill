@@ -19,7 +19,7 @@ export default ({ setPuuid }) => {
           params: { api_key: process.env.REACT_APP_APIKEY },
           headers: {
             "Access-Control-Allow-Origin": "https://random-fill.onrender.com",
-            "Access-Control-Allow-Header": "https://random-fill.onrender.com",
+            "Access-Control-Allow-Headers": "https://random-fill.onrender.com",
           },
         }
       )
