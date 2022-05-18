@@ -29,6 +29,7 @@ export default ({ puuid }) => {
             },
             headers: {
               "Access-Control-Allow-Origin": "https://random-fill.onrender.com",
+              "Access-Control-Allow-Header": "https://random-fill.onrender.com",
             },
           }
         )
@@ -46,6 +47,8 @@ export default ({ puuid }) => {
                 },
                 headers: {
                   "Access-Control-Allow-Origin":
+                    "https://random-fill.onrender.com",
+                  "Access-Control-Allow-Header":
                     "https://random-fill.onrender.com",
                 },
               }
