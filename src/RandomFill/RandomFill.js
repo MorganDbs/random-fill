@@ -31,7 +31,7 @@ export default ({ puuid }) => {
               "Access-Control-Allow-Origin": "https://random-fill.onrender.com",
               "Access-Control-Allow-Methods": "POST, GET",
               "Access-Control-Allow-Headers":
-                "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+                "Content-Type, Access-Control-Allow-Headers, Authorization, Access-Control-Allow-Methods, X-Requested-With",
             },
           }
         )
@@ -52,7 +52,7 @@ export default ({ puuid }) => {
                     "https://random-fill.onrender.com",
                   "Access-Control-Allow-Methods": "POST, GET",
                   "Access-Control-Allow-Headers":
-                    "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+                    "Content-Type, Access-Control-Allow-Headers, Authorization, Access-Control-Allow-Methods, X-Requested-With",
                 },
               }
             )
