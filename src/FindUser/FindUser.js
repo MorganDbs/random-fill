@@ -17,12 +17,6 @@ export default ({ setPuuid }) => {
         `https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${nameToFind}`,
         {
           params: { api_key: process.env.REACT_APP_APIKEY },
-          headers: {
-            "Access-Control-Allow-Origin": "https://random-fill.onrender.com",
-            "Access-Control-Allow-Methods": "POST, GET",
-            "Access-Control-Allow-Headers":
-              "Content-Type, Access-Control-Allow-Headers, Authorization, Access-Control-Allow-Methods, X-Requested-With",
-          },
         }
       )
       .then(({ data }) => {

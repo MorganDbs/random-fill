@@ -27,12 +27,6 @@ export default ({ puuid }) => {
               api_key: process.env.REACT_APP_APIKEY,
               count: 1,
             },
-            headers: {
-              "Access-Control-Allow-Origin": "https://random-fill.onrender.com",
-              "Access-Control-Allow-Methods": "POST, GET",
-              "Access-Control-Allow-Headers":
-                "Content-Type, Access-Control-Allow-Headers, Authorization, Access-Control-Allow-Methods, X-Requested-With",
-            },
           }
         )
         .then(({ data }) => {
@@ -46,13 +40,6 @@ export default ({ puuid }) => {
                 params: {
                   api_key: process.env.REACT_APP_APIKEY,
                   count: 1,
-                },
-                headers: {
-                  "Access-Control-Allow-Origin":
-                    "https://random-fill.onrender.com",
-                  "Access-Control-Allow-Methods": "POST, GET",
-                  "Access-Control-Allow-Headers":
-                    "Content-Type, Access-Control-Allow-Headers, Authorization, Access-Control-Allow-Methods, X-Requested-With",
                 },
               }
             )
