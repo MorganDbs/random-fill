@@ -15,7 +15,12 @@ export default ({ setPuuid }) => {
     axios
       .get(
         `https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${nameToFind}`,
-        { params: { api_key: process.env.REACT_APP_APIKEY } }
+        {
+          params: { api_key: process.env.REACT_APP_APIKEY },
+          headers: {
+            "Access-Control-Allow-Origin": "https://random-fill.onrender.com",
+          },
+        }
       )
       .then(({ data }) => {
         localStorage.setItem("lol-puuid", data.puuid);

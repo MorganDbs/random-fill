@@ -27,6 +27,9 @@ export default ({ puuid }) => {
               api_key: process.env.REACT_APP_APIKEY,
               count: 1,
             },
+            headers: {
+              "Access-Control-Allow-Origin": "https://random-fill.onrender.com",
+            },
           }
         )
         .then(({ data }) => {
@@ -40,6 +43,10 @@ export default ({ puuid }) => {
                 params: {
                   api_key: process.env.REACT_APP_APIKEY,
                   count: 1,
+                },
+                headers: {
+                  "Access-Control-Allow-Origin":
+                    "https://random-fill.onrender.com",
                 },
               }
             )
