@@ -19,7 +19,9 @@ export default ({ setPuuid }) => {
           params: { api_key: process.env.REACT_APP_APIKEY },
           headers: {
             "Access-Control-Allow-Origin": "https://random-fill.onrender.com",
-            "Access-Control-Allow-Headers": "https://random-fill.onrender.com",
+            "Access-Control-Allow-Methods": "POST, GET",
+            "Access-Control-Allow-Headers":
+              "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
           },
         }
       )
