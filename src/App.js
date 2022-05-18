@@ -35,6 +35,12 @@ export default () => {
     }
   }, [connected]);
 
+  const newSummonerName = () => {
+    localStorage.setItem("lol-puuid", null);
+    setPuuid("");
+    navigate("/find-user");
+  };
+
   return (
     <Routes>
       <Route
@@ -42,7 +48,10 @@ export default () => {
         element={<Password setConnected={setConnected} />}
       />
       <Route path="/find-user" element={<FindUser setPuuid={setPuuid} />} />
-      <Route path="/random-fill" element={<RandomFill puuid={puuid} />} />
+      <Route
+        path="/random-fill"
+        element={<RandomFill puuid={puuid} newSummonerName={newSummonerName} />}
+      />
     </Routes>
   );
 };

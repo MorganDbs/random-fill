@@ -20,6 +20,7 @@ export default ({ setPuuid }) => {
         }
       )
       .then(({ data }) => {
+        console.log(data);
         localStorage.setItem("lol-puuid", data.puuid);
         setPuuid(data.puuid);
       })
