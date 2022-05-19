@@ -19,6 +19,7 @@ export default ({ setConnected }) => {
 
   return (
     <div
+      className="pw"
       style={{
         width: "100vw",
         height: "100vh",
@@ -28,11 +29,23 @@ export default ({ setConnected }) => {
         flexDirection: "column",
       }}
     >
-      <Typography variant="h2">Password</Typography>
-      <TextField value={password} onChange={handleOnChange} type="password" />
-      <Button onClick={handleOnClick} type="submit">
-        Enter
-      </Button>
+      <div
+        style={{
+          background: "white",
+          padding: "16px",
+          borderRadius: "2px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <Typography variant="h2">Password</Typography>
+        <TextField value={password} onChange={handleOnChange} type="password" />
+        <Button onClick={handleOnClick} type="submit">
+          Enter
+        </Button>
+      </div>
     </div>
   );
 };

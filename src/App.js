@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import Password from "./Password";
 import FindUser from "./FindUser";
 import RandomFill from "./RandomFill";
+import "./App.css";
 
 export default () => {
   const navigate = useNavigate();
